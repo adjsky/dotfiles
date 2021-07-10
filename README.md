@@ -33,8 +33,17 @@ makepkg -si
 
 ## System
 ```
-yay -S firefox ranger alacritty rofi visual-studio-code-bin go go-tools goland pycharm-professional discord vim nodejs npm feh polybar xorg-xinput docker docker-compose
+yay -S git firefox ranger alacritty rofi visual-studio-code-bin go go-tools goland pycharm-professional discord nodejs npm feh polybar xorg-xinput docker docker-compose
 ```
+
+## Neovim/vim-plug
+```
+yay -S neovim neovim-symlinks
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+* Copy nvim config
+* In nvim write :PlugInstall
 
 ## Zsh/ohmyzsh
 ```
@@ -76,7 +85,7 @@ i've added an additional binding: DD moves a selected file to trash located at ~
 
 ```
 yay -S freetype2 fontconfig cairo \
-       nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-ubuntu-font-family
+       nerd-fonts-jetbrains-mono ttf-jetbrains-mono noto-fonts
 ```
 
 /etc/profile.d/freetype2.sh
