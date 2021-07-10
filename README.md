@@ -41,7 +41,6 @@ yay -S firefox ranger alacritty rofi vistual-studio-code-bin go \
 ## Zsh/ohmyzsh
 ```
 yay -S zsh
-chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
