@@ -4,6 +4,26 @@
 * /etc/pacman.d/mirrorlist
 * https://archlinux.org/mirrorlist/
 
+## Locales
+* Uncomment ru_RU.UTF-8 UTF-8 in /etc/locale.gen
+* Run locale-gen
+* Overwrite /etc/locale.conf with this
+```
+LANG=en_US.UTF-8
+LC_ADDRESS=ru_RU.UTF-8
+LC_IDENTIFICATION=ru_RU.UTF-8
+LC_MONETARY=ru_RU.UTF-8
+LC_MEASUREMENT=ru_RU.UTF-8
+LC_NUMERIC=ru_RU.UTF-8
+LC_TIME=ru_RU.UTF-8
+```
+
+## Sudo
+/etc/sudoers
+```
+<username> ALL=(ALL) ALL
+```
+
 ## Yay
 ```
 git clone https://aur.archlinux.org/yay.git
