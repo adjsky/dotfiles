@@ -191,7 +191,7 @@ exec --no-startup-id feh --bg-scale ~/Pictures/bg.jpg
 exec --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --rate 144.00
 
 # font
-font pango:Source Code Pro 11
+font pango:Ubuntu 11
 
 # bars/gaps
 for_window [class=".*"] border pixel 0
