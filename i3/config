@@ -179,8 +179,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id xinput --set-prop 8 'libinput Accel Profile Enabled' 0, 1
 
 # keyboard
-exec --no-startup-id setxkbmap -layout en,ru
-exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle'
+exec --no-startup-id setxkbmap -layout us,ru -option 'grp:ctrl_alt_toggle'
 
 # polybar
 exec_always --no-startup-id bash ~/.config/polybar/launch.sh
