@@ -33,8 +33,17 @@ makepkg -si
 
 ## System
 ```
-yay -S firefox ranger alacritty rofi visual-studio-code-bin go go-tools goland pycharm-professional discord vim nodejs npm feh polybar xorg-xinput docker docker-compose
+yay -S firefox ranger alacritty rofi visual-studio-code-bin go go-tools goland pycharm-professional discord nodejs npm feh polybar xorg-xinput docker docker-compose
 ```
+
+## Neovim/vim-plug
+```
+yay -S neovim neovim-symlinks
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+* Copy nvim config
+* In nvim write :PlugInstall
 
 ## Zsh/ohmyzsh
 ```
