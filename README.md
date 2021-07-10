@@ -1,5 +1,9 @@
 # If using modem don't forget to install modemmanager and usb_modeswitch
 
+## Pacman mirror list
+/etc/pacman.d/mirrorlist
+https://archlinux.org/mirrorlist/
+
 ## Yay
 ```
 git clone https://aur.archlinux.org/yay.git
