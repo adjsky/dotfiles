@@ -33,7 +33,7 @@ makepkg -si
 
 ## System
 ```
-yay -S firefox ranger alacritty rofi vistual-studio-code-bin go \ 
+yay -S firefox ranger alacritty rofi visual-studio-code-bin go \ 
        go-tools goland pycharm-professional discord vim nodejs npm \
        feh polybar xorg-xinput
 ```
