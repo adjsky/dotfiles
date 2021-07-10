@@ -1,8 +1,8 @@
 # If using modem don't forget to install modemmanager and usb_modeswitch
 
 ## Pacman mirror list
-/etc/pacman.d/mirrorlist
-https://archlinux.org/mirrorlist/
+* /etc/pacman.d/mirrorlist
+* https://archlinux.org/mirrorlist/
 
 ## Yay
 ```
