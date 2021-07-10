@@ -49,6 +49,7 @@ plugins=(
 ```
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 ```
+i've added an additional binding: DD moves a selected file to trash located at ~/.local/share/Trash/files
 
 ## Fonts
 
