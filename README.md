@@ -77,8 +77,8 @@ i've added an additional binding: DD moves a selected file to trash located at ~
 ## Fonts
 
 ```
-sudo yay -S freetype2 fontconfig cairo
-sudo yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-ubuntu-font-family
+yay -S freetype2 fontconfig cairo
+yay -S nerd-fonts-jetbrains-mono ttf-jetbrains-mono ttf-ubuntu-font-family
 ```
 
 /etc/profile.d/freetype2.sh
