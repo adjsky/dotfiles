@@ -181,3 +181,10 @@ gaps inner 10
 
 # focus
 focus_follows_mouse no
+
+# picom
+exec --no-startup-id picom
+
+# locker
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id light-locker
