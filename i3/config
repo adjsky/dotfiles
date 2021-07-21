@@ -155,9 +155,6 @@ exec_always --no-startup-id xinput --set-prop 8 'libinput Accel Profile Enabled'
 # keyboard
 exec --no-startup-id setxkbmap -layout us,ru -option 'grp:ctrl_alt_toggle'
 
-# polybar
-exec_always --no-startup-id bash ~/.config/polybar/launch.sh
-
 # bg picture
 exec --no-startup-id feh --bg-scale ~/Pictures/bg.jpg
 
@@ -173,6 +170,7 @@ font pango:Noto Sans 11
 client.focused          #44475a #282a36 #f8f8f2 #44475a   #44475a
 client.focused_inactive #282a36 #282a36 #f8f8f2 #282a36   #282a36
 client.unfocused        #282a36 #282a36 #f8f8f2 #282a36   #282a36
+client.urgent           #44475a #282a36 #f8f8f2 #44475a   #44475a
 
 client.background #282a36
 
@@ -183,8 +181,21 @@ gaps inner 10
 focus_follows_mouse no
 
 # picom
-exec --no-startup-id picom
+exec --no-startup-id picom --experimental-backends
 
 # locker
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id light-locker
+
+# notifications
+exec --no-startup-id dunst
+
+# nm-applet
+exec --no-startup-id nm-applet
+
+# polybar
+exec_always --no-startup-id zsh ~/.config/polybar/launch.sh
+
+# volume bindings
+bindsym $mod+plus exec pulseaudio-control --volume-max 100 up
+bindsym $mod+minus exec pulseaudio-control down

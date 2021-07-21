@@ -4,6 +4,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
+let g:dracula_colorterm = 0
 colorscheme dracula
 syntax on
 set termguicolors

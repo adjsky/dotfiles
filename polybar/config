@@ -1,0 +1,126 @@
+[colors]
+background = #282a36
+background-alt = #6272a4
+foreground = #f8f8f2
+cyan = #8be9fd
+green = #50fa7b
+orange = #ffb86c
+pink = #ff79c6
+purple = #bd93f9
+red = #ff5555
+yellow = #f1fa8c
+
+[bar/mybar]
+width = 100%
+height = 30
+offset-x = 0%
+offset-y = 0%
+radius = 0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin = 2
+
+font-0 = "Noto Sans:size=10;1"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;2"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=9;2"
+font-3 = "Font Awesome 5 Brands:pixelsize=9;2"
+
+modules-left = i3
+modules-center = title
+modules-right = keyboard updates updates_ipc audio date time
+tray-position = right
+tray-padding = 2
+
+;separator = %{F#bd93f9}|%{F-}
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+[module/updates_ipc]
+type = custom/ipc
+hook-0 = cat ~/.config/polybar/scripts/updates.txt
+initial = 0
+format =  <output>
+format-underline = ${colors.pink}
+click-left = ~/.config/polybar/scripts/start_updates.sh
+
+[module/updates]
+type = custom/script
+exec = ~/.config/polybar/scripts/start_updates.sh
+interval = 1800
+label = 
+
+[module/keyboard]
+type = internal/xkeyboard
+format = <label-layout>
+label-layout = %layout%
+
+[module/audio]
+type = custom/script
+tail = true
+exec = pulseaudio-control --icons-volume "," --icon-muted "" --format '$VOL_ICON‌‌ ‌‌ ${VOL_LEVEL}%' --color-muted 44475a listen
+click-right = pavucontrol &
+click-left = pulseaudio-control togmute
+scroll-up = pulseaudio-control --volume-max 100 up
+scroll-down = pulseaudio-control down
+format-underline = ${colors.cyan}
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %a %B %d
+label =   %date%
+format-underline = ${colors.purple}
+
+[module/time]
+type = internal/date
+interval = 1.0
+time = %H:%M
+label =   %time%
+format-underline = ${colors.green}
+
+[module/title]
+type = internal/xwindow
+format-padding = 0
+label-maxlen = 50
+
+[module/i3]
+type = internal/i3
+
+label-focused = %index%
+label-focused-background = ${colors.background-alt}
+label-focused-padding = 4
+
+label-unfocused = %index%
+label-unfocused-padding = 4
+label-unfocused-background = ${colors.background}
+
+label-urgent = %index%
+label-urgent-padding = 4
+label-urgent-background = #44475a
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-bottom = 5
+
+; vim:ft=dosini
