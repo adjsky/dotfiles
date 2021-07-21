@@ -1,3 +1,5 @@
+![Screenshot](https://imgur.com/Ys28ekV.png)
+
 # If using modem don't forget to install modemmanager and usb_modeswitch
 
 ## Pacman mirror list
