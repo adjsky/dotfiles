@@ -85,7 +85,7 @@ i've added an additional binding: DD moves a selected file to trash located at ~
 
 ```
 yay -S freetype2 fontconfig cairo \
-       nerd-fonts-jetbrains-mono ttf-jetbrains-mono noto-fonts
+       nerd-fonts-jetbrains-mono ttf-jetbrains-mono noto-fonts ttf-font-awesome
 ```
 
 /etc/profile.d/freetype2.sh
