@@ -33,7 +33,7 @@ makepkg -si
 
 ## System
 ```
-yay -S git firefox ranger alacritty rofi visual-studio-code-bin go go-tools goland pycharm-professional discord nodejs npm feh polybar xorg-xinput docker docker-compose pulseaudio-control network-manager-applet light-locker xfce4-power-manager picom lxappearance
+yay -S git firefox ranger alacritty rofi visual-studio-code-bin go go-tools goland pycharm-professional discord nodejs npm feh polybar xorg-xinput docker docker-compose pulseaudio-control network-manager-applet light-locker xfce4-power-manager picom lxappearance nautilus
 ```
 
 ## Neovim/vim-plug
