@@ -1,5 +1,7 @@
 {
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextCurrentLineOnly": false,
-  "git.addGBlameToVirtualText": true
+  "git.addGBlameToVirtualText": true,
+  "sumneko-lua.enableNvimLuaDev": true,
+  "Lua.diagnostics.globals": ["vim"]
 }
