@@ -1,4 +1,5 @@
 {
   "diagnostic.virtualText": true,
-  "diagnostic.virtualTextCurrentLineOnly": false
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "git.addGBlameToVirtualText": true
 }
