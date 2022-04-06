@@ -41,11 +41,25 @@ yay -S git firefox ranger alacritty rofi visual-studio-code-bin go go-tools gola
 ## Neovim/vim-plug
 ```
 yay -S neovim neovim-symlinks
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
 * Copy nvim config
-* In nvim write :PlugInstall
+* In nvim write :PackerSync
+* For coc.nvim:
+* * coc-tailwindcss
+* * coc-sumneko-lua
+* * coc-prettier
+* * coc-pairs
+* * coc-lua
+* * coc-git
+* * coc-eslint
+* * coc-cssmodules
+* * coc-yaml
+* * coc-tsserver
+* * coc-styled-components
+* For treesitter:
+* * tsx
+* * typescript
 
 ## Zsh/ohmyzsh
 ```
