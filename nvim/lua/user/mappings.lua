@@ -1,10 +1,13 @@
-vim.api.nvim_set_keymap("n", "<C-B>", "<cmd>CHADopen<cr>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-S>", "<cmd>Prettier<cr> <bar> :w<cr>", { noremap = true })
+local map = vim.api.nvim_set_keymap
 
-vim.api.nvim_set_keymap("n", "gd", "<Plug>(coc-definition)", { noremap = false })
-vim.api.nvim_set_keymap("n", "gy", "<Plug>(coc-type-definition)", { noremap = false })
-vim.api.nvim_set_keymap("n", "gi", "<Plug>(coc-implementation)", { noremap = false })
-vim.api.nvim_set_keymap("n", "gr", "<Plug>(coc-references)", { noremap = false })
+map("n", "<C-B>", "<cmd>CHADopen<cr>", { noremap = true })
+map("n", "<C-S>", "<cmd>Prettier<cr> <bar> :w<cr>", { noremap = true })
+
+map("n", "gd", "<Plug>(coc-definition)", { noremap = false })
+map("n", "gy", "<Plug>(coc-type-definition)", { noremap = false })
+map("n", "gi", "<Plug>(coc-implementation)", { noremap = false })
+map("n", "gr", "<Plug>(coc-references)", { noremap = false })
+map("n", "<esc>", ":noh<cr>", { noremap = true })
 
 vim.cmd([[
   " use <tab> for trigger completion and navigate to the next complete item
