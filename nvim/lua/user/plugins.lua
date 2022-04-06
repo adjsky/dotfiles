@@ -17,6 +17,6 @@ return require("packer").startup(function(use)
   use { 'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps' }
 
   -- tabs
-  use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
+  use { 'romgrk/barbar.nvim', requires = 'kyazdani42/nvim-web-devicons' }
 end)
 
