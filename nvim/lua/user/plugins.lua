@@ -1,4 +1,4 @@
-return require("packer").startup(function(use)
+return require'packer'.startup(function(use)
   -- COC:)
   use { 'neoclide/coc.nvim', branch = 'release '}
 
@@ -6,7 +6,7 @@ return require("packer").startup(function(use)
   use 'dracula/vim'
 
   -- indents
-  use "lukas-reineke/indent-blankline.nvim"
+  use 'lukas-reineke/indent-blankline.nvim'
 
   -- commenting
   use 'JoosepAlviste/nvim-ts-context-commentstring'

@@ -7,8 +7,8 @@ opt.expandtab = true
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.autoindent = true
-opt.guicursor = "i:ver1,a:blinkon1"
+opt.guicursor = 'i:ver1,a:blinkon1'
 
-opt.mouse = "a"
-opt.clipboard = "unnamedplus"
+opt.mouse = 'a'
+opt.clipboard = 'unnamedplus'
 
