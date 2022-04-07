@@ -1,6 +1,6 @@
 return require'packer'.startup(function(use)
   -- COC:)
-  use { 'neoclide/coc.nvim', branch = 'release '}
+  use { 'neoclide/coc.nvim', branch = 'release' }
 
   -- colorscheme
   use 'dracula/vim'
@@ -10,7 +10,7 @@ return require'packer'.startup(function(use)
 
   -- commenting
   use 'JoosepAlviste/nvim-ts-context-commentstring'
-  use { 'nvim-treesitter/nvim-treesitter', run =  ':TSUpdate' }
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'tpope/vim-commentary'
 
   -- explorer
