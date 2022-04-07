@@ -6,7 +6,7 @@ return require("packer").startup(function(use)
   use 'dracula/vim'
 
   -- indents
-  use 'Yggdroot/indentLine'
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- commenting
   use 'JoosepAlviste/nvim-ts-context-commentstring'
