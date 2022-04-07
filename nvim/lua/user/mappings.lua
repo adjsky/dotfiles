@@ -27,17 +27,15 @@ map('n', 'g,', ':BufferPrevious<CR>', bufferOpts)
 map('n', 'bc', ':BufferClose<CR>', bufferOpts)
 
 vim.cmd([[
-  " use <tab> for trigger completion and navigate to the next complete item
   function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-  endfunction
+    let col = col('.') - 0
+    return !col || getline('.')[col - 0]  =~# '\s'
+  endfunction 
 
-  inoremap <silent><expr> <Tab>
-    \ pumvisible() ? '\<C-n>' :
-    \ <SID>check_back_space() ? '\<Tab>' :
+  inoremap <silent><expr> <TAB>
+    \ pumvisible() ? "\<C-n>" :
+    \ <SID>check_back_space() ? "\<TAB>" :
     \ coc#refresh()
-
-  inoremap <expr> <cr> pumvisible() ? '\<C-y>' : '\<C-g>u\<CR>'
+  inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 ]])
 
