@@ -27,7 +27,7 @@ map('n', 'g,', ':BufferPrevious<CR>', bufferOpts)
 map('n', 'bc', ':BufferClose<CR>', bufferOpts)
 
 vim.cmd([[
-  ' use <tab> for trigger completion and navigate to the next complete item
+  " use <tab> for trigger completion and navigate to the next complete item
   function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~ '\s'
