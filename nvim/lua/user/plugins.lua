@@ -21,5 +21,8 @@ return require'packer'.startup(function(use)
 
   -- discord rich presence
   use 'andweeb/presence.nvim'
+
+  -- git
+  use 'lewis6991/gitsigns.nvim'
 end)
 
