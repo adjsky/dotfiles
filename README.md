@@ -51,7 +51,6 @@ yay -S neovim neovim-symlinks
 * * coc-prettier
 * * coc-pairs
 * * coc-lua
-* * coc-git
 * * coc-eslint
 * * coc-cssmodules
 * * coc-yaml
