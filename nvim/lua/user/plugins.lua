@@ -32,5 +32,8 @@ return require'packer'.startup(function(use)
 
   -- git
   use 'lewis6991/gitsigns.nvim'
+
+  -- startup
+  use { 'goolord/alpha-nvim', requires = 'kyazdani42/nvim-web-devicons' }
 end)
 
