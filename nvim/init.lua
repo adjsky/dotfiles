@@ -6,5 +6,4 @@ require 'user.mappings'
 require 'user.treesitter'
 require 'user.indent'
 require 'user.gitsigns'
-require 'user.nvim_tree'
 
