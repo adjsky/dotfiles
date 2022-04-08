@@ -14,7 +14,7 @@ return require'packer'.startup(function(use)
   use 'tpope/vim-commentary'
 
   -- explorer
-  use { 'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps' }
+  use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' } }
 
   -- tabs
   use { 'romgrk/barbar.nvim', requires = 'kyazdani42/nvim-web-devicons' }

@@ -1,6 +1,6 @@
 local map = vim.api.nvim_set_keymap
 
-map('n', '<C-B>', '<cmd>CHADopen<cr>', { noremap = true })
+map('n', '<C-B>', ':NvimTreeToggle<CR>', { noremap = true })
 map('n', '<C-S>', ':w<cr>', { noremap = true })
 
 map('n', 'gd', '<Plug>(coc-definition)', { noremap = false })

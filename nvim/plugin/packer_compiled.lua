@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
-  chadtree = {
-    loaded = true,
-    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/chadtree",
-    url = "https://github.com/ms-jpq/chadtree"
-  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -93,6 +88,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
