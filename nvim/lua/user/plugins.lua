@@ -18,5 +18,8 @@ return require'packer'.startup(function(use)
 
   -- tabs
   use { 'romgrk/barbar.nvim', requires = 'kyazdani42/nvim-web-devicons' }
+
+  -- discord rich presence
+  use 'andweeb/presence.nvim'
 end)
 

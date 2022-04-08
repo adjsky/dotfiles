@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
+  },
   vim = {
     loaded = true,
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/vim",
