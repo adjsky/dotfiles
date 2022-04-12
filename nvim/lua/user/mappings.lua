@@ -30,5 +30,5 @@ map('n', 'g0', ':BufferLast<CR>', bufferOpts)
 
 map('n', 'g.', ':BufferNext<CR>', bufferOpts)
 map('n', 'g,', ':BufferPrevious<CR>', bufferOpts)
-map('n', 'bc', ':BufferClose<CR>', bufferOpts)
+map('n', '<C-w>', ':BufferClose<CR>', bufferOpts)
 
