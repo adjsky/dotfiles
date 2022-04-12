@@ -49,5 +49,11 @@ return require'packer'.startup(function(use)
   -- autotag & pairs
   use 'windwp/nvim-ts-autotag'
   use 'windwp/nvim-autopairs'
+
+  -- fuzzy finder
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 end)
 

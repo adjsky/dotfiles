@@ -1,9 +1,19 @@
 local map = vim.api.nvim_set_keymap
 
+-- open file explorer
 map('n', '<C-B>', ':Neotree toggle<CR>', { noremap = true })
+
+-- save file
 map('n', '<C-S>', ':w<cr>', { noremap = true })
 
+-- clear higlights after searching
 map('n', '<esc>', ':noh<cr>', { noremap = true })
+
+-- invert tab
+map('i', '<S-Tab>', '<C-d>', { noremap = true })
+
+-- open fuzzy finder
+map('n', '<C-p>', '<cmd>Telescope find_files prompt_prefix=<cr>', { noremap = true })
 
 local bufferOpts = { noremap = true, silent = true }
 
