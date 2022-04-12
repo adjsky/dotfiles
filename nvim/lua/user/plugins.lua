@@ -45,5 +45,9 @@ return require'packer'.startup(function(use)
   -- LSP
   use 'neovim/nvim-lspconfig' -- enable LSP
   use 'williamboman/nvim-lsp-installer' -- simple to use language server installer
+
+  -- autotag & pairs
+  use 'windwp/nvim-ts-autotag'
+  use 'windwp/nvim-autopairs'
 end)
 
