@@ -15,6 +15,9 @@ map('i', '<S-Tab>', '<C-d>', { noremap = true })
 -- open fuzzy finder
 map('n', '<C-p>', '<cmd>Telescope find_files prompt_prefix=<cr>', { noremap = true })
 
+-- format document
+map('n', 'fd', '<cmd>Neoformat prettier<cr>', { noremap = true })
+
 local bufferOpts = { noremap = true, silent = true }
 
 map('n', 'g1', ':BufferGoto 1<CR>', bufferOpts)
