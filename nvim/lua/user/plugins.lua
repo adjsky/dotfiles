@@ -1,6 +1,5 @@
 return require'packer'.startup(function(use)
-  -- COC:)
-  use { 'neoclide/coc.nvim', branch = 'release' }
+  use 'wbthomason/packer.nvim'
 
   -- colorscheme
   use 'dracula/vim'
@@ -15,12 +14,12 @@ return require'packer'.startup(function(use)
 
   -- explorer
   use {
-  "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
+  'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v2.x',
     requires = {
-      "nvim-lua/plenary.nvim",
-      "kyazdani42/nvim-web-devicons",
-      "MunifTanjim/nui.nvim"
+      'nvim-lua/plenary.nvim',
+      'kyazdani42/nvim-web-devicons',
+      'MunifTanjim/nui.nvim'
     }
   }
 
@@ -35,5 +34,16 @@ return require'packer'.startup(function(use)
 
   -- startup
   use { 'goolord/alpha-nvim', requires = 'kyazdani42/nvim-web-devicons' }
+
+  -- cmp plugins
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
+
+  -- LSP
+  use 'neovim/nvim-lspconfig' -- enable LSP
+  use 'williamboman/nvim-lsp-installer' -- simple to use language server installer
 end)
 

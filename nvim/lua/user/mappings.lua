@@ -3,10 +3,6 @@ local map = vim.api.nvim_set_keymap
 map('n', '<C-B>', ':Neotree toggle<CR>', { noremap = true })
 map('n', '<C-S>', ':w<cr>', { noremap = true })
 
-map('n', 'gd', '<Plug>(coc-definition)', { noremap = false })
-map('n', 'gy', '<Plug>(coc-type-definition)', { noremap = false })
-map('n', 'gi', '<Plug>(coc-implementation)', { noremap = false })
-map('n', 'gr', '<Plug>(coc-references)', { noremap = false })
 map('n', '<esc>', ':noh<cr>', { noremap = true })
 
 local bufferOpts = { noremap = true, silent = true }
@@ -25,17 +21,4 @@ map('n', 'g0', ':BufferLast<CR>', bufferOpts)
 map('n', 'g.', ':BufferNext<CR>', bufferOpts)
 map('n', 'g,', ':BufferPrevious<CR>', bufferOpts)
 map('n', 'bc', ':BufferClose<CR>', bufferOpts)
-
-vim.cmd([[
-  function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
-  endfunction
-
-  inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-  inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-]])
 

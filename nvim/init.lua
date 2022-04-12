@@ -7,4 +7,6 @@ require 'user.treesitter'
 require 'user.indent'
 require 'user.gitsigns'
 require 'user.startup'
+require 'user.completion'
+require 'user.lsp'
 

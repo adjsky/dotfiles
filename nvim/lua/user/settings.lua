@@ -3,6 +3,7 @@ local opt = vim.opt
 opt.termguicolors = true
 opt.number = true
 opt.expandtab = true
+opt.signcolumn = 'yes'
 
 opt.tabstop = 2
 opt.shiftwidth = 2
