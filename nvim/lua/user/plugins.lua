@@ -2,7 +2,7 @@ return require'packer'.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
-  use 'dracula/vim'
+  use 'Mofiqul/dracula.nvim'
 
   -- indents
   use 'lukas-reineke/indent-blankline.nvim'

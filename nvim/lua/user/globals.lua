@@ -1,4 +1,4 @@
-vim.g.dracula_colorterm = 0
+vim.g.dracula_transparent_bg = true
 vim.g.bufferline = {
   animation = false,
   closable = false,
