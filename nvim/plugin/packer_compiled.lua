@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["git-conflict.nvim"] = {
+    loaded = true,
+    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/git-conflict.nvim",
+    url = "https://github.com/akinsho/git-conflict.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -108,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  neoformat = {
+    loaded = true,
+    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -168,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   vim = {
     loaded = true,

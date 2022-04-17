@@ -136,10 +136,10 @@ mode "resize" {
         bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Left resize grow width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Right resize shrink width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -150,16 +150,16 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # mouse
-exec_always --no-startup-id xinput --set-prop 8 'libinput Accel Profile Enabled' 0, 1
+exec_always --no-startup-id xinput --set-prop 14 'libinput Accel Profile Enabled' 0, 1
 
 # keyboard
 exec --no-startup-id setxkbmap -layout us,ru -option 'grp:ctrl_alt_toggle'
 
 # bg picture
-exec --no-startup-id feh --bg-scale ~/Pictures/bg.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper.jpg
 
-# 144hz fullhd
-exec --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080 --rate 144.00
+# monitors
+exec ~/.screenlayout/main.sh
 
 # font
 font pango:Noto Sans 11

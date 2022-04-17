@@ -18,6 +18,12 @@ map('n', '<C-p>', '<cmd>Telescope find_files prompt_prefix=<cr>', { noremap = tr
 -- format document
 map('n', 'fd', '<cmd>Neoformat prettier<cr>', { noremap = true })
 
+-- git conflicts
+map('n', 'ci', '<cmd>GitConflictChooseTheirs<cr>', { noremap = true })
+map('n', 'cc', '<cmd>GitConflictChooseOurs<cr>', { noremap = true })
+map('n', 'cb', '<cmd>GitConflictChooseBoth<cr>', { noremap = true })
+map('n', 'cn', '<cmd>GitConflictChooseNone<cr>', { noremap = true })
+
 local bufferOpts = { noremap = true, silent = true }
 
 map('n', 'g1', ':BufferGoto 1<CR>', bufferOpts)

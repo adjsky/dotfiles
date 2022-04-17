@@ -10,4 +10,5 @@ require 'user.startup'
 require 'user.completion'
 require 'user.lsp'
 require 'user.autopairs'
+require 'user.git_conflict'
 

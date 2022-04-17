@@ -2,8 +2,7 @@ window:
   padding: 
     x: 5
     y: 5
-
-background_opacity: 0.9
+  opacity: 0.9
 
 colors:
   primary:
@@ -76,4 +75,4 @@ font:
     family: JetBrainsMono Nerd Font Mono
     style: Bold Italic
 
-  size: 13
+  size: 14
