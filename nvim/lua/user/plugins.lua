@@ -2,7 +2,7 @@ return require'packer'.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
-  use 'Mofiqul/dracula.nvim'
+  use 'folke/tokyonight.nvim'
 
   -- indents
   use 'lukas-reineke/indent-blankline.nvim'
@@ -61,5 +61,8 @@ return require'packer'.startup(function(use)
 
   -- formatting
   use 'sbdchd/neoformat'
+
+  -- color highlighting
+  use { 'RRethy/vim-hexokinase', run = 'make hexokinase' }
 end)
 

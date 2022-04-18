@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
-  },
   ["git-conflict.nvim"] = {
     loaded = true,
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/git-conflict.nvim",
@@ -189,10 +184,20 @@ _G.packer_plugins = {
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-hexokinase"] = {
+    loaded = true,
+    path = "/home/adjsky/.local/share/nvim/site/pack/packer/start/vim-hexokinase",
+    url = "https://github.com/RRethy/vim-hexokinase"
   },
   ["vim-vsnip"] = {
     loaded = true,

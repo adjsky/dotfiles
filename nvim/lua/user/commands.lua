@@ -1,4 +1,4 @@
 vim.cmd[[
-  colorscheme dracula
+  colorscheme tokyonight
 ]]
 
