@@ -4,6 +4,9 @@ window:
     y: 5
   opacity: 0.9
 
+key_bindings:
+  - { key: Return, mods: Alt|Shift, action: SpawnNewInstance }
+
 colors:
   primary:
     background: '0x282a36'
