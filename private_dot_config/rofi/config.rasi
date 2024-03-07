@@ -1,0 +1,111 @@
+configuration {
+    show-icons:      true;
+    display-drun:    "";
+    disable-history: false;
+}
+
+* {
+    font: "Jetbrains Mono 12";
+
+    background-color: #1e2030;
+    selected-background-color: #f5bde6;
+    text-color: #cad3f5;
+    dimmed-text-color: #8087a2;
+    selected-text-color: #181926;
+    border-color: #f5bde6;
+}
+
+#window {
+    background-color: @background-color;
+    border: 3;
+    border-radius: 10;
+    border-color: @border-color;
+    padding: 16;
+    width: 520px;
+}
+
+#mainbox {
+    border:  0;
+    padding: 0;
+}
+
+#message {
+    border: 0px;
+    border-color: @border-color;
+    padding: 1px;
+}
+
+#textbox {
+    text-color: @text-color;
+}
+
+#listview {
+    fixed-height: 0;
+    border: 0px;
+    border-color: @border-color;
+    spacing: 8px;
+    scrollbar: false;
+    padding: 8px 0px 0px;
+}
+
+#element {
+    border: 0;
+    padding: 6px 4px;
+    border-radius: 6px;
+}
+
+#element.normal.normal {
+    background-color: @background-color;
+    text-color:       @text-color;
+}
+
+#element.selected.normal {
+    background-color: @selected-background-color;
+    text-color:       @selected-text-color;
+}
+
+#element.alternate.normal {
+    background-color: @background-color;
+    text-color: @text-color;
+}
+
+#button.selected {
+    background-color: @selected-background-color;
+    text-color: @text-color;
+}
+
+#inputbar {
+    spacing:    2px;
+    text-color: @text-color;
+}
+
+#case-indicator {
+    spacing:    0;
+    text-color: @text-color;
+}
+
+#entry {
+    spacing: 0;
+    text-color: @text-color;
+    placeholder-color: @dimmed-text-color; 
+}
+
+#prompt {
+    spacing: 0;
+    text-color: @text-color;
+}
+
+#inputbar {
+    children: [textbox-prompt-colon, entry];
+}
+
+#textbox-prompt-colon {
+    expand: false;
+    str: ">";
+    text-color: @text-color;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color: inherit;
+}

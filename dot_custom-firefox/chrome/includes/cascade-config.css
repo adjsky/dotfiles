@@ -1,0 +1,106 @@
+:root {
+  --uc-border-radius: 0px;
+  --uc-status-panel-spacing: 12px;
+}
+
+/* remove window control buttons */
+.titlebar-buttonbox-container {
+  display: none !important;
+}
+
+#pageActionButton {
+  display: none !important;
+}
+
+#PanelUI-menu-button {
+  padding: 0px !important;
+}
+#PanelUI-menu-button .toolbarbutton-icon {
+  width: 1px !important;
+}
+#PanelUI-menu-button .toolbarbutton-badge-stack {
+  padding: 0px !important;
+}
+
+/*---+---+---+---+---+---+---+
+ | T | O | O | L | B | A | R |
+ +---+---+---+---+---+---+---*/
+
+:root {
+  --uc-toolbar-position: 0;
+}
+
+/* Darken the Personal Toolbar by X amount where X = 1 means pure black and 
+  X = 0 means no darkening at all */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --uc-darken-toolbar: 0.2;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --uc-darken-toolbar: 0;
+  }
+}
+
+/*---+---+---+---+---+---+---+
+ | U | R | L | — | B | A | R |
+ +---+---+---+---+---+---+---*/
+
+:root {
+  --uc-urlbar-min-width: 35vw;
+  --uc-urlbar-max-width: 35vw;
+  --uc-urlbar-position: 1;
+  --uc-urlbar-top-spacing: 1px;
+}
+
+/* Disable the Navigation Buttons */
+#back-button,
+#forward-button {
+  display: none !important;
+}
+
+/* Encryption and Permissions icons */
+/* Only hides permission items */
+#identity-permission-box {
+  display: none !important;
+}
+
+/* Hide everything BUT the zoom indicator within the URL Bar */
+#page-action-buttons > :not(#urlbar-zoom-button) {
+  display: none !important;
+}
+
+/* Hide the »Go«-arrow in the URL Bar */
+#urlbar-go-button {
+  display: none !important;
+}
+
+/* Hides the Extensions Menu Icon */
+#unified-extensions-button {
+  display: none !important;
+}
+
+/*---+---+---+---+---+---+---+
+ | T | A | B | — | B | A | R |
+ +---+---+---+---+---+---+---*/
+
+:root {
+  --uc-active-tab-width: clamp(100px, 30vw, 300px);
+  --uc-inactive-tab-width: clamp(100px, 20vw, 200px);
+
+  --show-tab-close-button: none;
+  --show-tab-close-button-hover: none;
+
+  --uc-show-all-tabs-button: none;
+
+  --container-tabs-indicator-margin: 10px;
+
+  --uc-identity-glow: 0 1px 10px 1px;
+}
+
+/* Hide the secondary Tab Label (playing indicator, the text, not the icon) */
+.tab-secondary-label {
+  display: none !important;
+}
